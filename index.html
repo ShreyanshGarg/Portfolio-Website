@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+  <!-- ____________________Custom Styling________________ -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Custom fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <!-- favicon -->
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAJr8bADbPKwAYlA8AiuOEABsXGgAcFxoAHBgaABuoEQBWzE4AHBgbAAAAAAAAAAAAAAAAAAAAAAAAAAAABVZ1c4E4WgAFVng1dVM1AAVWkzd1UzUAAzMzM1dTNQADNTF4NVM1AANVOVU0QzMAA1UxUjFVdQAHVTMzNVU1AAdVczM1VTUAB1kzM1VTNQAHMzlkMzc1AAMzd2d3V3cAAzd3VTVXdwADNVVUNVV3AAM1VVOFVXcABjMzNTVVVwD+DwAA+ecAAPHnAACA5wAAkmcAALMDAACyPwAA8HcAAPh3AADg5wAAwhcAAI//AACffwAAnn8AAJ5/AADBfwAA" rel="icon" type="image/x-icon" />
+
+  <script src="https://kit.fontawesome.com/22cbeb89ea.js" crossorigin="anonymous"></script>
+  <title>Web Developer Portfolio</title>
+</head>
+
+<body>
+  <!-- Top Logo Section -->
+  <div class="container">
+    <div class="logo">
+      <section class="name">
+        <h1>SG</h1>
+      </section>
+    </div>
+    <!--_______ X Top Logo Section X_____________-->
+
+
+    <!-- The modal section -->
+
+    <div id="simplemodal0" class="modal">
+      <div class="modalcontent">
+        <span class="closebtn" id="ca" onclick="closeModal(this.id)">&times</span>
+        <header>
+          <h2>ABOUT ME</h2>
+        </header>
+        <h3 id="ab_content">Hello,</h3>
+        <p id="ab_content">I'm a Full Stack Developer and computer science undergraduate student at Swami Keshvanand Institute Of Technology, Jaipur.
+          I’ve always sought out opportunities and challenges that are meaningful to me. I am always striving to learn new technologies and to become a better web developer.
+          In addition, I have a strong background in team and event coordination.
+        </p>
+      </div>
+    </div>
+
+    <div id="simplemodal1" class="modal">
+      <div class="modalcontent">
+        <span class="closebtn" id="cp" onclick="closeModal(this.id)">&times</span>
+        <header>
+          <h2>PROJECTS</h2>
+        </header>
+      <div class="project-content">
+        <section class="resume">
+          <img src="images/resume.png" class="resume" alt="resume-website">
+          <span class="resume-content">
+          <h4><u>Resume Builder</u></h4>
+          <p>Web based editor to build Resume in a customizable templates.</p>
+          <a href="https://github.com/ShreyanshGarg/Resume-Builder" target="_blank">
+          <button class="resumecode" type="button" class="btn btn-secondary btn-sm">CODE</button></a>
+            <a href="https://shreyanshgarg.github.io/Resume-Builder/" target="_blank">
+          <button class="resumeweb" type="button" class="btn btn-secondary btn-sm">WEBSITE</button></a>
+          </span>
+        </section>
+
+        <section class="portfolio">
+          <span class="portfolio-content">
+          <h4><u>Web-Portfolio</u></h4>
+          <p>Web Portfolio to showcase acadmics, skills, projects and contact details in better manner.</p>
+        <a href="#"> <button class="resumecode" type="button" class="btn btn-secondary btn-sm">CODE</button></a>
+        <a href="#" target="_blank">
+          <button class="resumeweb" type="button" class="btn btn-secondary btn-sm">WEBSITE</button></a>
+          </span>
+          <img src="images/portfolio.png" alt="portfolio" class="resume"
+          style="padding-right: 6px;">
+        </section>
+      </div>
+      </div>
+    </div>
+
+    <div id="simplemodal2" class="modal">
+      <div class="modalcontent" id="skills" >
+        <span class="closebtn" id="cs" onclick="closeModal(this.id)">&times</span>
+        <header>
+          <h2>SKILLS</h2>
+        </header>
+        <section class="skillbars">
+
+        <li>
+          <h3>HTML5</h3><span class="bar">
+            <span class="html"> </span>90%</span>
+        </li>
+
+        <li>
+          <h3>CSS</h3><span class="bar">
+            <span class="css"> </span>75%</span>
+        </li>
+
+        <li>
+          <h3>Jquery</h3><span class="bar">
+            <span class="jquery"> </span>50%</span>
+        </li>
+
+        <li>
+          <h3>JavaScript</h3><span class="bar">
+            <span class="javascript"> </span>80%</span>
+        </li>
+
+        <li>
+          <h3>Node.js</h3><span class="bar">
+            <span class="node"> </span>70%</span>
+        </li>
+
+        <li>
+          <h3>MongoDB</h3><span class="bar">
+            <span class="mongoDB"> </span>55%</span>
+        </li>
+</section>
+      </div>
+    </div>
+
+
+    <div id="simplemodal3" class="modal">
+      <div class="modalcontent contact">
+        <span class="closebtn" id="cc" onclick="closeModal(this.id)">&times</span>
+        <header>
+          <h2>CONTACT ME</h2>
+        </header>
+        <div class="btn " id="contact_btn">
+          <a href="https://github.com/ShreyanshGarg" target="_blank">
+            <i class="fab fa-github-square" style="padding: 0px 25px 0px 0px;"></i></a>
+          <a href="https://www.linkedin.com/in/shreyansh-garg-6479281aa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:guptashreyansh22@gmail.com" target="_blank"><i class="fas fa-envelope-square" style="padding-left: 31px;"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- X   The Modal Section  X   -->
+
+
+
+
+    <!-- The Unwanted Section -->
+    <div class="unwanted">
+      <div class="line1"></div>
+      <div class="horiline1">
+        <hr>
+      </div>
+      <section class="text">
+        <h1>SHREYANSH GARG</h1>
+        <p>FULL STACK DEVELOPER</p>
+        <div class="horiline1">
+          <hr>
+        </div>
+        <div class="line1"></div>
+      </section>
+      <!-- THE nav section -->
+      <nav style="    margin-left: -48px;
+    margin-top: -16px;">
+        <ul>
+          <li id="about" onclick="openModal(this.id)">ABOUT</li>
+          <li id="project" onclick="openModal(this.id)">PROJECT
+          </li>
+          <li id="skills" onclick="openModal(this.id)">SKILLS</li>
+          <li id="contact" onclick="openModal(this.id)">CONTACT</li>
+        </ul>
+      </nav>
+      <!--   X    The nav section  X    -->
+      <div class="btn">
+        <a href="https://github.com/ShreyanshGarg" target="_blank">
+          <i class="fab fa-github-square" style="padding: 0px 25px 0px 0px;"></i></a>
+        <a href="https://www.linkedin.com/in/shreyansh-garg-6479281aa/ " target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!--X  The Unwanted Section    X-->
+  </div>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
